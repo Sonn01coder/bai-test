@@ -86,9 +86,9 @@
         padding: 0 40px;
     }
     .content_list {
-        grid-template-columns: repeat(2, 45%);
-        gap: 10%;
+        display: flex;
         margin-top: 20px;
+        
     }
 }
 
