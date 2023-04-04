@@ -1,0 +1,14 @@
+.home {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.home_nav {
+    width: 150px;
+}
+
+.home_content {
+    width: 100%;
+}
