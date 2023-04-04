@@ -1,9 +1,15 @@
 .content {
     width: 100%;
-    padding: 0 130px;
+    border-bottom: 1px solid #DEDEDE;
+}
+
+.content_container {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    max-width: 1000px;
+    width: 80%;
+    margin: auto;
 }
 
 .logo {
@@ -39,4 +45,123 @@
     font-weight: 400;
     padding: 0 100px;
     margin-bottom: 40px;
+}
+
+.content_list {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    gap: 5%;
+}
+
+.footer {
+    max-width: 1000px;
+    width: 80%;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    margin: 30px auto 30px;
+}
+
+.menu {
+    left: 10px;
+    top: 10px;
+    position: absolute;
+    font-size: 28px;
+    display: none;
+}
+
+
+
+@media (max-width: 1200px) and (min-width: 962px)  {
+    .content_container {
+        width: 85%;
+    }
+    .logo {
+        height: 90px;
+    }
+    .intro {
+        margin: 25px auto 0;
+    }
+    .intro_text {
+        padding: 0 40px;
+    }
+    .content_list {
+        grid-template-columns: repeat(2, 45%);
+        gap: 10%;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 962px) and (min-width: 768px)  {
+    .content_container {
+        width: 90%;
+    }
+    .logo {
+        height: 80px;
+    }
+    .intro {
+        margin: 25px auto 0;
+    }
+    .intro_text {
+        padding: 0 30px;
+        margin-bottom: 10px;
+    }
+    .content_list {
+        display: flex;
+        flex-direction: column;
+        gap: 10%;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 480px)  {
+    .content_container {
+        width: 93%;
+    }
+    .logo {
+        height: 70px;
+    }
+    .intro {
+        margin: 20px auto 0;
+    }
+    .intro_title {
+        margin-top: 10px;
+    }
+    .intro_text {
+        padding: 0 20px;
+    }
+    .content_list {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px)  {
+    .content_container {
+        width: 98%;
+    }
+    .logo {
+        height: 50px;
+    }
+    .intro {
+        margin: 30px auto 0;
+    }
+    .intro_title {
+        margin-top: 8px;
+    }
+    .intro_text {
+        padding: 0 10px;
+        margin-bottom: 20px;
+    }
+    .content_list {
+        display: flex;
+        flex-direction: column;
+        margin: 8px 10px;
+    }
+
+    .menu {
+        display: block;
+    }
+    
 }
